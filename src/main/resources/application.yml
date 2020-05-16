@@ -1,0 +1,29 @@
+#配置连接数据库
+spring:
+  port: 8080
+  thymeleaf:
+    mode: HTML
+  #指定配置环境
+  profiles:
+    active: dev
+
+#配置评论头像
+comment.avatar: /images/avatar.jpg
+
+#---------------------------------------
+#  datasource:
+#    driver-class-name: com.mysql.jdbc.Driver
+#    url: jdbc:mysql://localhost:3306/blog?useUnicode=true&characterEncoding=utf-8
+#    username: root
+#    password: 123456
+#  jpa:
+#    hibernate:
+#      ddl-auto: update
+#    show-sql: true
+##配置日志通知级别,日志的存放目录
+#logging:
+#  level:
+#    root: info
+#   com.fgy: debug
+#  file:
+#    path: log/blog.log
